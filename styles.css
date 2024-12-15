@@ -1,7 +1,5 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    
 }
 body {
     font-family: Arial, sans-serif;
@@ -10,6 +8,10 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f0f0f0;
+    padding-top: 30px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
   .game-container {
@@ -77,4 +79,12 @@ body {
     padding: 14px;
     margin-bottom: 0;
     color: white;
+  }
+
+  #startButton{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    padding: 10px;
+    border: 0 none;
+    width: 80px;
   }

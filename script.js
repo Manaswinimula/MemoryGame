@@ -1,6 +1,7 @@
 const gameBoard = document.getElementById('gameBoard');
 const timerDisplay = document.getElementById('timer');
 const scoreDisplay = document.getElementById('score');
+const startButton = document.getElementById('startButton');
 
 let flippedCards = [];
 let matchedPairs = 0;
@@ -41,6 +42,10 @@ function startGame() {
     time++;
     timerDisplay.textContent = time;
   }, 1000);
+
+  // Disable the start button after the game starts
+  startButton.disabled = true;
+  startButton.style.display = 'none';
 }
 
 // Flip a card when clicked
@@ -77,5 +82,5 @@ function checkMatch() {
   flippedCards = [];
 }
 
-// Initialize the game when the page loads
-startGame();
+// Initialize the game when the start button is clicked
+startButton.addEventListener('click', startGame);
